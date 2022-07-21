@@ -1,0 +1,9 @@
+university,subject,year,chinese,english,mathA,mathB,physics,chemistry,biology,history,geography,citizen,average
+玄奘大學,大眾傳播學系,100,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,1.75,36.66
+玄奘大學,應用心理學系,100,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,1.75,33.83
+玄奘大學,法律學系,100,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,1.75,33.74
+玄奘大學,社會福利學系,100,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,1.75,33.29
+玄奘大學,應用外語學系(日文組),100,2,1,NULL,NULL,NULL,NULL,NULL,NULL,2,2,34.11
+玄奘大學,時尚設計學系,100,2,1,NULL,NULL,NULL,NULL,NULL,NULL,2,2,31.37
+玄奘大學,視覺傳達設計學系,100,2,1,NULL,NULL,NULL,NULL,NULL,NULL,2,2,30.24
+玄奘大學,旅館管理學系,100,2,1,NULL,NULL,NULL,NULL,NULL,NULL,2,2,0
