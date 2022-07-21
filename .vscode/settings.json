@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.module": "php",
+        "*.rmd": "markdown",
+        "string": "cpp"
+    }
+}

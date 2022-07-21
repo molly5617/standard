@@ -573,15 +573,29 @@ int main()
             int standardnum=0;//有倍率的個數
             float fivenumber[5]={0};
             temp=0;
+             float square=0;
 /**                         standard                                                       **/
-        if(z>0&&(averager[z]!=""))
-        {
-            if(chineser[z]!="NULL")
+ 
+
+
+
+
+
+
+
+
+/**                         standard                                                       **/
+            if(z>0&&(averager[z]!=""))
+            { 
+
+
+                /**            standard                **/
+                if(chineser[z]!="NULL")
             {
                 fivenumber[standardnum]= (float)stof(chineser[z]);
                 standardnum=standardnum+1;
             }
-            if(englishr[z]!="NULL")
+              if(englishr[z]!="NULL")
             {
                 fivenumber[standardnum]= (float)stof(englishr[z]);
                 standardnum=standardnum+1;
@@ -606,19 +620,51 @@ int main()
                 fivenumber[standardnum]= (float)stof(chemistryr[z]);
                 standardnum=standardnum+1;
             }
-        }
-        
+             if(biologyr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(biologyr[z]);
+                standardnum=standardnum+1;
+            }
+             if(historyr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(historyr[z]);
+                standardnum=standardnum+1;
+            }
+             if(geographyr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(geographyr[z]);
+                standardnum=standardnum+1;
+            }
+            if(citizenr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(citizenr[z]);
+                standardnum=standardnum+1;
+            }
 
 
 
+              while(standardnum!=5)
+            {
+                fivenumber[standardnum]=0;
+                standardnum++;
+
+            }
+            for(i=0;i<5;i++)
+            {
+                standardaverage+=fivenumber[i];
+            }
+           
+            standardaverage=standardaverage/5;
+            for(i=0;i<5;i++)
+            {
+                square+=(fivenumber[i]-standardaverage)*(fivenumber[i]-standardaverage);
+            }
+            square=square/5;
+            square=sqrt(square);
 
 
-
-
-
-/**                         standard                                                       **/
-            if(z>0&&(averager[z]!=""))
-            { 
+            
+            /**           standard                               **/
                 now=(float)stof(averager[z]);
                     if(chineser[z]!="NULL")
                     {
@@ -921,6 +967,9 @@ int main()
                 tempa[z]=temp;
                suma[z]=sum;
               newa[z]=sum/temp;
+              newa[z]=(1-square*0.03)*newa[z];
+              
+             
             
             z++;
             }
@@ -946,7 +995,7 @@ int main()
     ofstream outfil;
     
     string change;
-    outfil.open("110rank.csv");
+    outfil.open("1104rank.csv");
     for(i=1;i<num-1;i++)
         for(j=1;j<num-2;j++)
         {
@@ -1019,7 +1068,7 @@ int main()
     }
     outfil.close();
     ofstream outfile;
-    outfile.open("110transfer.csv");
+    outfile.open("110transfer1.csv");
 
     for(i=0;i<102;i++)
     {
