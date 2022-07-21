@@ -515,6 +515,7 @@ int main()
     float now;
     float suma[2000];
     float tempa[2000];
+    float standardaverage=0;
     while(rank.good())
     {
 
@@ -568,7 +569,54 @@ int main()
             averager[z].append(average);
             float temp1;
             float sum=0;
+            standardaverage=0;//標準差平均值
+            int standardnum=0;//有倍率的個數
+            float fivenumber[5]={0};
             temp=0;
+/**                         standard                                                       **/
+        if(z>0&&(averager[z]!=""))
+        {
+            if(chineser[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(chineser[z]);
+                standardnum=standardnum+1;
+            }
+            if(englishr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(englishr[z]);
+                standardnum=standardnum+1;
+            }
+            if(mathar[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(mathar[z]);
+                standardnum=standardnum+1;
+            }
+            if(mathbr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(mathbr[z]);
+                standardnum=standardnum+1;
+            }
+             if(physicsr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(physicsr[z]);
+                standardnum=standardnum+1;
+            }
+            if(chemistryr[z]!="NULL")
+            {
+                fivenumber[standardnum]= (float)stof(chemistryr[z]);
+                standardnum=standardnum+1;
+            }
+        }
+        
+
+
+
+
+
+
+
+
+/**                         standard                                                       **/
             if(z>0&&(averager[z]!=""))
             { 
                 now=(float)stof(averager[z]);
