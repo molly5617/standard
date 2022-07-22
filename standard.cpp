@@ -995,7 +995,7 @@ int main()
     ofstream outfil;
     
     string change;
-    outfil.open("1104rank.csv");
+    outfil.open("110rank.csv");
     for(i=1;i<num-1;i++)
         for(j=1;j<num-2;j++)
         {
@@ -1068,7 +1068,7 @@ int main()
     }
     outfil.close();
     ofstream outfile;
-    outfile.open("110transfer1.csv");
+    outfile.open("110transfer.csv");
 
     for(i=0;i<102;i++)
     {
