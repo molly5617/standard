@@ -7,7 +7,7 @@ int main()
 {
     ifstream myfile;
     
-    myfile.open("110gst.csv");
+    myfile.open("109ast.csv");
     string biology[102];
      string chinese[102];
       string chemistry[102];
@@ -511,7 +511,7 @@ int main()
     int x;
     ifstream rank;
    
-   rank.open("110.csv");
+   rank.open("109weight.csv");
     float now;
     float suma[2000];
     float tempa[2000];
@@ -898,7 +898,7 @@ int main()
     ofstream outfil;
     
     string change;
-    outfil.open("1101rank.csv");
+    outfil.open("1091rank.csv");
     for(i=1;i<num-1;i++)
         for(j=1;j<num-2;j++)
         {
