@@ -4,13 +4,13 @@
 
 int main(void)
 {
-	const int num = 45;
+	const int num = 42;
 	float average = (num+1)/2.0;
 	int i,web,sd;
 	float cov1=0,x1=0,y=0,cov2=0,x2=0;
     FILE *DataIn1,*DataIn2;
-    DataIn1=fopen("108cs-0.00r.txt","r"); 
-    DataIn2=fopen("108cs-0.02r.txt","r");
+    DataIn1=fopen("108cs-0.03t.txt","r"); 
+    DataIn2=fopen("108bio-0.00r.txt","r");
     if (DataIn1 != NULL && DataIn2 != NULL)
     {   
 	   for(i=1;i<=num;i++)
