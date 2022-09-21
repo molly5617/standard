@@ -4,6 +4,7 @@
         "*.rmd": "markdown",
         "string": "cpp",
         "ostream": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "xstring": "cpp"
     }
 }

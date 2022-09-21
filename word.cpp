@@ -9,7 +9,7 @@ int main()
     
     myfile.open("apple.csv");
     ofstream outfile;
-    outfile.open("words.csv");
+    outfile.open("words2.csv");
     
    
    float year=106;
@@ -41,26 +41,26 @@ int main()
             
             else if(sum==2)
             {
-                answer+="順序二:"+banana+" ";
-                answer1+="順序二:"+orange+" ";
+                answer+="<br>順序二:"+banana+" ";
+                answer1+="<br>順序二:"+orange+" ";
             }
             
             if(sum==3)
             {
-                answer+="順序三:"+banana+" ";
-                answer1+="順序三:"+orange+" ";
+                answer+="<br>順序三:"+banana+" ";
+                answer1+="<br>順序三:"+orange+" ";
             }
             
             if(sum==4)
             {
-                answer+="順序四:"+banana+" ";
-                answer1+="順序四:"+orange+" ";
+                answer+="<br>順序四:"+banana+" ";
+                answer1+="<br>順序四:"+orange+" ";
             }
             
             if(sum==5)
             {
-                answer+="順序五:"+banana+" ";
-                answer1+="順序五:"+orange+" ";
+                answer+="<br>順序五:"+banana+" ";
+                answer1+="<br>順序五:"+orange+" ";
             }
             
         }
